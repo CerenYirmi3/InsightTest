@@ -4,7 +4,7 @@ os.environ["HF_HUB_DISABLE_SYMLINKS_WARNING"] = "1"
 
 
 # Hugging Face modeli ile bir metin oluşturucu başlatma
-generator = pipeline("text2text-generation", model="t5-small")
+generator = pipeline("text2text-generation", model="dbmdz/bert-base-turkish-cased")
 
 # Geri bildirimden test senaryosu oluşturma
 def generate_test_scenario(feedback):
